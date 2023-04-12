@@ -67,6 +67,7 @@ tf_idf.select('features').show(truncate=False)
 -   Correlations: Measure the linear relationship between two variables.
 -   Stratified sampling: Divide a dataset into multiple subsets based on the values of a specific column.
 
+Example for Summary Statistics:
 ```python
 from pyspark.ml.linalg import Vectors
 from pyspark.ml.stat import Summarizer
@@ -100,6 +101,7 @@ print("Variance:", variance) # Variance: [1.0,1.0,1.0]
 -   Ridge regression
 -   Lasso regression
 
+example for Linear Regression:
 ```python
 from pyspark.ml.regression import LinearRegression
 from pyspark.ml.linalg import Vectors
@@ -137,6 +139,7 @@ spark.stop()
 -   Naive Bayes
 -   Support Vector Machines
 
+Example for Naive Bayes Classifier:
 ```python
 from pyspark.sql import SparkSession
 from pyspark.ml import Pipeline
@@ -186,6 +189,7 @@ spark.stop()
 ## Decision Trees
 Decision Trees can be used for both classification and regression tasks. They are particularly useful for handling non-linear relationships and missing values.
 
+example using a decision tree for classification:
 ```python
 from pyspark.ml import Pipeline
 from pyspark.ml.classification import DecisionTreeClassifier
@@ -245,8 +249,9 @@ spark.stop()
 ```
 
 ## Recommendation Systems using Alternating Least Squares (ALS)
-Collaborative filtering is commonly used for recommendation systems, and ALS is one of the most popular algorithms for collaborative filtering. Here's an example using ALS:
+Collaborative filtering is commonly used for recommendation systems, and ALS is one of the most popular algorithms for collaborative filtering. 
 
+Example using ALS:
 ```python
 from pyspark.ml.evaluation import RegressionEvaluator
 from pyspark.ml.recommendation import ALS
